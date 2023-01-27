@@ -1,0 +1,456 @@
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~
+$ cd. ./Desktop
+bash: cd.: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~
+$ pwd
+/c/Users/Martin
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~
+$ cd ./Desktop
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop
+$ mkdir Labs-Ironhack
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop
+$ cd ./Labs-Ironhack
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack
+$ git clone https://github.com/DrMrtn/lab-bash.git
+Cloning into 'lab-bash'...
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 40 (delta 14), reused 10 (delta 10), pack-reused 17
+Receiving objects: 100% (40/40), 11.61 KiB | 3.87 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack
+$ ls
+lab-bash/
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack
+$ cd lab-bash
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ echo
+
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ Echo
+
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ Echo "Hello World"
+Hello World
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ echo "Yo!"
+Yo!
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ mkdir new_dir
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ rmdir new_dir
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cd lorem
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem.txt  sed.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cp sed.txt lorem-copy/
+cp: cannot create regular file 'lorem-copy/': Not a directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cp sed.txt
+cp: missing destination file operand after 'sed.txt'
+Try 'cp --help' for more information.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cp sed.txt sed_copie.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ ../
+bash: ../: Is a directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cd ../
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cd lorem-copy
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Martin/Desktop/Labs-Ironhack/lab-bash/lorem-copy
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ cp sed_copy.txt lorem_copy/
+cp: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ cp sed.txt sed_copie.txt
+cp: cannot stat 'sed.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ mv sed_copy.text ./lorem-copy
+mv: cannot stat 'sed_copy.text': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ mv sed_copy.txt ./lorem-copy
+mv: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ cd ./
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem-copy (master)
+$ cd ../
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cd ./lorem
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ mv sed_copy.txt ./lorem-copy
+mv: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ mv sed_copy.txt ../lorem-copy
+mv: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ mv sed_copy.txt ../
+mv: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cp sed_copy.txt lorem-copy/
+cp: cannot stat 'sed_copy.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash/lorem (master)
+$ cd ../
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy/
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt ; lorem. text lorem-copy/
+cp: missing destination file operand after 'lorem/at.txt'
+Try 'cp --help' for more information.
+bash: lorem.: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt ; lorem/lorem.txt lorem-copy/
+cp: missing destination file operand after 'lorem/at.txt'
+Try 'cp --help' for more information.
+lorem/lorem.txt: line 1: Lorem: command not found
+lorem/lorem.txt: line 2: Ut: command not found
+lorem/lorem.txt: line 3: Duis: command not found
+lorem/lorem.txt: line 4: Excepteur: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt;lorem.txt lorem-copy/
+cp: missing destination file operand after 'lorem/at.txt'
+Try 'cp --help' for more information.
+bash: lorem.txt: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/ ;lorem.txt lorem-copy/
+bash: lorem.txt: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/ ;cp lorem.txt lorem-copy/
+cp: cannot stat 'lorem.txt': No such file or directory
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/ ;cp lorem/lorem.txt lorem-copy/
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat-3 lorem-copy/sed.txt
+bash: cat-3: command not found
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat -3 lorem-copy/sed.txt
+cat: unknown option -- 3
+Try 'cat --help' for more information.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ head -3 lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ head --help
+Usage: head [OPTION]... [FILE]...
+Print the first 10 lines of each FILE to standard output.
+With more than one FILE, precede each with a header giving the file name.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -c, --bytes=[-]NUM       print the first NUM bytes of each file;
+                             with the leading '-', print all but the last
+                             NUM bytes of each file
+  -n, --lines=[-]NUM       print the first NUM lines instead of the first 10;
+                             with the leading '-', print all but the last
+                             NUM lines of each file
+  -q, --quiet, --silent    never print headers giving file names
+  -v, --verbose            always print headers giving file names
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+NUM may have a multiplier suffix:
+b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
+GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.
+Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/head>
+or available locally via: info '(coreutils) head invocation'
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ head +3 lorem-copy/sed.txt
+head: cannot open '+3' for reading: No such file or directory
+==> lorem-copy/sed.txt <==
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ tail -3 lorem-copy/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ echo 'Homo homini lupus.' >> lorem-copy/sed.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ tail lorem-copy/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ tail -1 lorem-copy/sed.txt
+Homo homini lupus.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ sed -n 's/et/ET/p' lorem/sed.txt
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amET, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ sed -n 's/et/ET/gp' lorem/sed.txt
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amET, consectETur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ sed -n -i 's/et/ET/p' lorem/sed.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat lorem/sed.txt
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis ET quasi architecto beatae vitae dicta sunt explicabo.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amET, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore ET dolore magnam aliquam quaerat voluptatem.
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ who
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ whoami
+Martin
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ^C
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ pwd
+/c/Users/Martin/Desktop/Labs-Ironhack/lab-bash
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls lorem/*.txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt  lorem/sed_copie.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ wc -l lorem/sed.txt
+3 lorem/sed.txt
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls -1 | wc -l
+7
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat | wc -l lorem/sed.txt
+3 lorem/sed.txt
+
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ cat | wc -l lorem
+wc: lorem: Is a directory
+0 lorem
+ls | wc -l lorem
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls -1 | grep lorem | wc -l
+2
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ read my_name
+Martin
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ echo $my_name
+Martin
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ mkdir my_name
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ mkdir $my_name
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ rmdir &my_name
+[1] 1432
+bash: my_name: command not found
+rmdir: missing operand
+Try 'rmdir --help' for more information.
+[1]+  Exit 1                  rmdir
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ rmdir --help
+Usage: rmdir [OPTION]... DIRECTORY...
+Remove the DIRECTORY(ies), if they are empty.
+
+      --ignore-fail-on-non-empty
+                  ignore each failure that is solely because a directory
+                    is non-empty
+  -p, --parents   remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is
+                    similar to 'rmdir a/b/c a/b a'
+  -v, --verbose   output a diagnostic for every directory processed
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/rmdir>
+or available locally via: info '(coreutils) rmdir invocation'
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ rmdir Martin
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ rmdir my_name
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$ ls
+exercices/  first_day.txt  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Martin@DESKTOP-1V4NLHH MINGW64 ~/Desktop/Labs-Ironhack/lab-bash (master)
+$
